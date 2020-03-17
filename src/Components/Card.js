@@ -2,7 +2,7 @@ import React from 'react'
 import exerciseImg from '../Imagenes/exercise.png'
 class Card extends React.Component {
     render(){
-        return
+        return(
             <div>
                 <div>
                     <img src={exerciseImg}/>
@@ -12,6 +12,7 @@ class Card extends React.Component {
                     <p>esta es mi practica amiguitos</p>
                 </div>
             </div>
+        )
     }
 
 
