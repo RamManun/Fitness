@@ -1,6 +1,6 @@
 import React from 'react'
 import exerciseImg from '../Imagenes/exercise.png'
-import circleImg from '../Imagenes/circles.png'
+import circlesImg from '../Imagenes/circles.png'
 import './styles/Card.css'
 import 'bootstrap/dist/css/bootstrap.css'
 
@@ -21,13 +21,13 @@ class Card extends React.Component {
             }, 5000)
     }
     render(){
-        const { title, description, img, leftColor, rightColor} = this.props
+        const { title, description, img} = this.props
         return(
             <div className="card mx-auto Fitness-Card"
             style={{
-                backgroundImage: `url(${circleImg}), linear-grandient(to right, ${leftColor}, ${rightColor}`
-            }}
-            >
+                backgroundImage: `url(${circlesImg}), linear-grandient (to right, ${this.props.LeftColor}, ${this.props.RightColor})`
+                }}
+                >
                 <div className="card-body">
                     <div className="row center">
                         <div className="col-6">
