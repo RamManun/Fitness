@@ -2,6 +2,7 @@ import  React from 'react'
 import exerciseList from '../Components/ExerciseList'
 import Welcome from '../Components/Welcome'
 import ExerciseList from '../Components/ExerciseList'
+import Botton from '../Components/Bottom'
 
 class Exercises extends React.Component {
     constructor(props){
@@ -40,7 +41,10 @@ class Exercises extends React.Component {
     <ExerciseList
         Exercises={this.state.data}
     />
+    <Botton
+    />
     </div>
+    
         )
     }
 }
