@@ -7,11 +7,11 @@ import 'bootstrap/dist/css/bootstrap.css'
 class Card extends React.Component {
 
     render(){
-        const { title, description, img} = this.props
+        const { title, description, img, leftColor, rightColor} = this.props
         return(
             <div className="card mx-auto Fitness-Card"
             style={{
-                backgroundImage: `url(${circlesImg}),linear-gradient(to right, ${this.props.leftColor}, ${this.props.rightColor})`
+                backgroundImage: `url(${circlesImg}),linear-gradient(to right, ${leftColor}, ${rightColor})`
                 }}
                 >
                 <div className="card-body">

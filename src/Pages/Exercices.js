@@ -3,12 +3,12 @@ import exerciseList from '../Components/ExerciseList'
 import Welcome from '../Components/Welcome'
 import ExerciseList from '../Components/ExerciseList'
 import Botton from '../Components/Bottom'
+import '/Users/Ramce/fitness/Fitness/src/Components/styles/Card.css'
 
 class Exercises extends React.Component {
-    constructor(props){
-        super(props)
-        this.state = {
-            data: [{
+        
+    state = {
+        data: [{
             "id":	1,
             "title":	"Technique Guides",
             "description":	"Learn amazing street workout and calisthenics",
@@ -31,20 +31,19 @@ class Exercises extends React.Component {
             "rightColor":	"#F76B1C"
             }]
         }
-    }
-    render(){
+        
+    render() {
         return(
-            <div>
-    <Welcome
-        username="Ram"
-    />
-    <ExerciseList
-        Exercises={this.state.data}
-    />
-    <Botton
-    />
-    </div>
-    
+                <div>
+                    <Welcome
+                        username="Ram"
+                    />
+                    <ExerciseList
+                        Exercises={this.state.data}
+                    />
+                    <Botton
+                    />
+                    </div>  
         )
     }
 }
