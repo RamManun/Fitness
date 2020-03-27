@@ -1,4 +1,4 @@
-const url = 'http://fitnessappi.herokuapp.com/api'
+const url = 'fitnessapi-test.herokuapp.com/api'
 
 export default url
 
