@@ -8,11 +8,7 @@ const ExerciseList = ({Exercises}) => (
         {Exercises.map((Exercises)=>(
             <Card
                 key={Exercises.id}
-                title={Exercises.title}
-                description={Exercises.description}
-                img={Exercises.img}
-                leftColor={Exercises.leftColor}
-                rightColor={Exercises.rightColor}
+                {...Exercises}
             />     
         ))}
     </React.Fragment>
