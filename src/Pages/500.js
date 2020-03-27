@@ -1,6 +1,6 @@
 import React from 'react'
 import '../Components/styles/Errors.css'
-import FatalErrorImg from '../Imagenes/500.png'
+import FatalErrorImg from '../images/500.png'
 
 const FatalError = () => (
     <div className="text-center">
