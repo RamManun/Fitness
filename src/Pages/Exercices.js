@@ -9,6 +9,7 @@ import FaltalError from './500'
 import FatalError from './500'
 import ExerciseNew from './ExerciseNew'
 
+
 class Exercises extends React.Component {
         
     state = {
