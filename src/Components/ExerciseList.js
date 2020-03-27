@@ -4,7 +4,7 @@ import { render } from '@testing-library/react'
 import Card from './Card'
 
 const ExerciseList = ({Exercises}) => (
-    <div>
+    <React.Fragment>
         {Exercises.map((Exercises)=>(
             <Card
                 key={Exercises.id}
@@ -15,7 +15,7 @@ const ExerciseList = ({Exercises}) => (
                 rightColor={Exercises.rightColor}
             />     
         ))}
-    </div>
+    </React.Fragment>
 )
 
 export default ExerciseList

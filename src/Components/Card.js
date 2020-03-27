@@ -1,6 +1,7 @@
 import React from 'react'
-import exerciseImg from '../Imagenes/exercise.png'
-import circlesImg from '../Imagenes/circles.png'
+import exerciseImg from '../images/exercise.png'
+import circlesImg from '../images/circles.png'
+import emptyImg from '../images/empty.png'
 import './styles/Card.css'
 import 'bootstrap/dist/css/bootstrap.css'
 
@@ -11,13 +12,13 @@ class Card extends React.Component {
         return(
             <div className="card mx-auto Fitness-Card"
             style={{
-                backgroundImage: `url(${circlesImg}),linear-gradient(to right, ${leftColor}, ${rightColor})`
+                backgroundImage: `url(${circlesImg}),linear-gradient(to right, ${leftColor || '#56CCF2'}, ${rightColor || '#2F80ED'})`
                 }}
                 >
                 <div className="card-body">
                     <div className="row center">
                         <div className="col-6">
-                            <img src={img} className="float-rigth"/>
+                            <img src={img || emptyImg} className="float-rigth"/>
                         </div>
                         <div className="col-6 Fitness-Card-Info">
                             <h1>{title}</h1>

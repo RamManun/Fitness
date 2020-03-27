@@ -15,4 +15,4 @@ import './Components/styles/Card.css'
 const container = document.getElementById('root')
 
 
-ReactDOM.render(<body className="BodyColor"> <App /> </body>,container)
+ReactDOM.render(<App />,container)
