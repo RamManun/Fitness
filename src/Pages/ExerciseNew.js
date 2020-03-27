@@ -3,8 +3,8 @@ import ExerciseForm from '../Components/ExerciseForm'
 import Card from '../Components/Card'
 import '../Components/styles/ExerciseNew.css'
 import FatalError from './500'
-
-class ExerciseNew extends React.Component {
+import ExerciseNew from './ExerciseNew'
+class ExerciseNewContainer extends React.Component {
 
     state = {
         form: {
@@ -79,11 +79,11 @@ class ExerciseNew extends React.Component {
                 </div>
             </div>
             
-    
+
         )
     }
     
    
 }
 
-export default ExerciseNew
+export default ExerciseNewContainer

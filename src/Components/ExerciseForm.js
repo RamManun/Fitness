@@ -6,7 +6,7 @@ class ExerciseForm extends React.Component {
     
 
     render(){
-        const { onChange, onSubmit, form } = this.props
+        const {form, onChange, onSubmit} = this.props
 
         return(
             <div className="container">
